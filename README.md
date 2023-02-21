@@ -1,11 +1,18 @@
-# Vite Integration Web Extension
+# Vite Integration (Vite Plugin + Browser Extension)
 
-Chrome/Edge/Firefox extension to integrate old-school backend with Vite dev server.
+Integrate old-school backend with Vite dev server.
 
-The extension is ONLY needed when:
+## Who need it
+
+It is ONLY needed when:
 
 - your back-end generate HTML and inject important stuff (header, footer, sidebar, data);
 - and your back-end doesn't have Vite integration ability.
+
+## How it works
+
+1. **Vite Plugin** tell **Browser Extension** what page and asset URL should be replaced
+2. **Browser Extension** match page URL and replace specific assets with Vite dev server assets
 
 ## Install extension
 
@@ -39,4 +46,3 @@ const config: UserConfig = {
 export default config;
 ```
 
-The extension will automatically detect local vite server and replace production assets with vite dev server assets.
