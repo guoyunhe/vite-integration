@@ -14,9 +14,10 @@
   "icons": {
     "48": "vite.svg"
   },
-  "permissions": ["<all_urls>"],
+  "permissions": ["activeTab", "scripting", "webRequest", "webRequestBlocking"],
+  "host_permissions": ["*://*/*"],
 
-  "browser_action": {
+  "action": {
     "default_icon": {
       "32": "vite.svg"
     },

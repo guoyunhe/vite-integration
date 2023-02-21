@@ -1,20 +1,11 @@
-"use strict";
+const aScript = {
+  id: "insert-vite-scripts",
+  js: ["insert-vite-scripts.js"],
+  matches: ["https://github.com/*"],
+};
 
-let registered = null;
-
-async function registerScript(message) {
-  let hosts = message.hosts;
-  let code = message.code;
-
-  if (registered) {
-    registered.unregister();
-  }
-
-  registered = await browser.contentScripts.register({
-    matches: hosts,
-    js: [{ code }],
-    runAt: "document_idle",
-  });
+try {
+  browser.scripting.registerContentScripts([aScript]);
+} catch (err) {
+  console.error(`failed to register content scripts: ${err}`);
 }
-
-browser.runtime.onMessage.addListener(registerScript);
