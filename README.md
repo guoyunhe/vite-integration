@@ -27,7 +27,7 @@ if (window.ViteIntegration) {
 Then, add `vite-integration-disabled` to 
 
 ```html
-<link href="path/to/your/production/assets.js" vite-integration-disabled>
+<link href="path/to/your/production/assets.css" vite-integration-disabled>
 <script src="path/to/your/production/assets.js" vite-integration-disabled></script>
 ```
 
