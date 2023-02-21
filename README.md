@@ -1,6 +1,11 @@
 # Vite Integration Web Extension
 
-Chrome/Edge/Firefox extension to integrate old-school backend with Vite dev server
+Chrome/Edge/Firefox extension to integrate old-school backend with Vite dev server.
+
+The extension is ONLY needed when:
+
+- your back-end generate HTML and inject important stuff (header, footer, sidebar, data);
+- and your back-end doesn't have Vite integration ability.
 
 ## Install
 
@@ -8,7 +13,6 @@ Go to Chrome web store or Firefox addon...
 
 ## Configuration
 
-The extension is ONLY needed when your back-end generate HTML.
 
 You need to add the following configuration to your HTML:
 
