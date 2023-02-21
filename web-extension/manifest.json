@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Vite Integration",
+  "version": "1.1",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "vite-integration@mozilla.org",
+      "strict_min_version": "59.0a1"
+    }
+  },
+
+  "description": "Insert Vite dev server scripts to back-end generated HTML",
+  "icons": {
+    "48": "vite.svg"
+  },
+  "permissions": ["<all_urls>"],
+
+  "browser_action": {
+    "default_icon": {
+      "32": "vite.svg"
+    },
+    "default_title": "Vite Integration",
+    "default_popup": "popup/index.html",
+    "browser_style": true
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
