@@ -13,6 +13,14 @@ Go to Chrome web store or Firefox addon...
 
 ## Configuration
 
+Configure site whitelist to enable this extension:
+
+```ini
+www.example.com
+store.example.com
+```
+
+## Customize Your HTML
 
 You need to add the following configuration to your HTML:
 
